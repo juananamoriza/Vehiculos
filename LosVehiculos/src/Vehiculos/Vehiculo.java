@@ -3,8 +3,8 @@ package Vehiculos;
 public class Vehiculo {
 
 		private String color;
-		private byte numeroRuedas;
-		private short cilindrada;
+		private short numeroRuedas;
+		private int cilindrada;
 		private short potencia;
 
 		public Vehiculo (String col)
@@ -12,30 +12,30 @@ public class Vehiculo {
 			this.color = col;
 		}
 
-		public Vehiculo (byte numRuedas)
+		public Vehiculo (short numRuedas)
 		{
 			this.numeroRuedas = numRuedas;
 		}
 
-		public Vehiculo (short cilin) 
+		public Vehiculo (int cilin) 
 		{
 			this.cilindrada = cilin;
 		}
 
-		public Vehiculo (String col, byte numRuedas) 
+		public Vehiculo (String col, short numRuedas) 
 		{
 			this.color = col;
 			this.numeroRuedas = numRuedas; 
 		}
 
-		public Vehiculo (String col, byte numRuedas, short cilin) 
+		public Vehiculo (String col, short numRuedas, short cilin) 
 		{
 			this.color = col;
 			this.numeroRuedas = numRuedas;
 			this.cilindrada = cilin;
 		} 
 
-		public Vehiculo (String col, byte numRuedas, short cilin, short pot)
+		public Vehiculo (String col, short numRuedas, short cilin, short pot)
 		{
 			this.color = col;
 			this.numeroRuedas = numRuedas;
@@ -49,12 +49,12 @@ public class Vehiculo {
 			return color;
 		}
 		
-		public byte getNumRuedas ( ) 
+		public short getNumRuedas ( ) 
 		{
 			return numeroRuedas;
 		} 
 		
-		 public short getCilindrada ( )
+		 public int getCilindrada ( )
 		 {
 			 return cilindrada;
 		 }
@@ -68,7 +68,7 @@ public class Vehiculo {
 		 {
 			 this.color = col;
 		 } 
-		 public void setNumeroRuedas (byte numRuedas) 
+		 public void setNumeroRuedas (short numRuedas) 
 		 {
 			 this.numeroRuedas = numRuedas;
 		 } 

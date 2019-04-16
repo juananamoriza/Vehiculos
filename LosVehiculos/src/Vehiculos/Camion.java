@@ -2,29 +2,29 @@ package Vehiculos;
 
 public class Camion extends Vehiculo {
 
-	private byte numeroEjes;
+	private short numeroEjes;
 
-	public Camion (byte numRuedas) 
+	public Camion (short numRuedas) 
 	{
 		super (numRuedas);
 	}
 
-	public Camion (String color, byte numRuedas) 
+	public Camion (String color, short numRuedas) 
 	{
 		super (color, numRuedas);
 	}
 
-	public Camion (String color, byte numRuedas, short cilin) 
+	public Camion (String color, short numRuedas, short cilin) 
 	{
 		super(color, numRuedas, cilin);
 	}
 
-	public Camion (String color, byte numRuedas, short cilin, short poten) 
+	public Camion (String color, short numRuedas, short cilin, short poten) 
 	{
 		super(color,numRuedas,cilin,poten);
 	}
 
-	public Camion (String col, byte numRuedas, byte numEjes, short cilin, short poten) 
+	public Camion (String col, short numRuedas, short numEjes, short cilin, short poten) 
 	{
 		super (col, numRuedas, cilin, poten);
 		this.numeroEjes = numEjes;
@@ -32,12 +32,12 @@ public class Camion extends Vehiculo {
 	
 	
 
-	public byte setNumeroEjes ( )
+	public short setNumeroEjes ( )
 	{
 		return numeroEjes;
 	}
 
-	public void getNumeroEjes (byte numEjes) 
+	public void getNumeroEjes (short numEjes) 
 	{
 		this.numeroEjes = numEjes;
 	}

@@ -2,39 +2,39 @@ package Vehiculos;
 
 public class Motocicleta extends Vehiculo{
 	
-	private byte numeroPlazas;
+	private short numeroPlazas;
 	
 
-	public Motocicleta (byte numPlazas)
+	public Motocicleta (short numPlazas)
 	{
 		super(numPlazas);
-		super.setNumeroRuedas((byte) 2);
+		super.setNumeroRuedas((short) 2);
 	}
 	
 	public Motocicleta (String color)
 	{
 		super(color);
-		super.setNumeroRuedas((byte) 2);
+		super.setNumeroRuedas((short) 2);
 	}
 	
-	public Motocicleta (String color,byte cilin)
+	public Motocicleta (String color,short cilin)
 	{
 		super(color, cilin);
-		super.setNumeroRuedas((byte) 2);
+		super.setNumeroRuedas((short) 2);
 	}
 	
-	public Motocicleta (String color,byte cilin,short poten)
+	public Motocicleta (String color,short cilin,short poten)
 	{
 		super(color,cilin,poten);
-		super.setNumeroRuedas((byte) 2);
+		super.setNumeroRuedas((short) 2);
 	}
 	
 	
-	public byte getNumeroPlazas()
+	public short getNumeroPlazas()
 	{
 		return numeroPlazas;
 	}
-	public void setNumeroPlazas(byte num)
+	public void setNumeroPlazas(short num)
 	{
 		numeroPlazas=num;
 	}
